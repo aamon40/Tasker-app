@@ -1,22 +1,16 @@
 {
   "tasks": [
     {
-      "id": 1,
       "text": "Doc appointment",
-      "day": "Feb 7th at 22:00",
-      "reminder": true
+      "day": "10th October at 21:00hrs",
+      "reminder": true,
+      "id": 1
     },
     {
-      "text": "Go bike riding",
-      "day": "Jun 3rd, 11:00hrs",
+      "text": "Eat breakfast",
+      "day": "March 10 9 O'clock",
       "reminder": false,
-      "id": 4
-    },
-    {
-      "text": "Chill by the beach",
-      "day": "Jan 23rd at 14:00hrs",
-      "reminder": false,
-      "id": 6
+      "id": 2
     }
   ]
 }
