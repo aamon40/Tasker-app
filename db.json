@@ -7,16 +7,16 @@
       "reminder": true
     },
     {
-      "id": 3,
-      "text": "Shopping for wedding clothes",
-      "day": "Feb 34th at 14:30",
-      "reminder": true
-    },
-    {
       "text": "Go bike riding",
       "day": "Jun 3rd, 11:00hrs",
-      "reminder": true,
+      "reminder": false,
       "id": 4
+    },
+    {
+      "text": "Chill by the beach",
+      "day": "Jan 23rd at 14:00hrs",
+      "reminder": false,
+      "id": 6
     }
   ]
 }

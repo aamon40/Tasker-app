@@ -4,20 +4,30 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 body {
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  color: #102f09;
+  background: #fff;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+
 .container {
+  background-image: url(./assets/images/beach.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 500px;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
+  border-radius: 10px;
   padding: 30px;
-  border-radius: 5px;
 }
 
 .header {
@@ -27,22 +37,30 @@ body {
   margin-bottom: 20px;
 }
 
+.header h1 {
+  color: #fff;
+}
+
 .btn {
   display: inline-block;
-  background: #000;
+  background: #093740;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 15px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
   font-family: inherit;
 }
 
 .btn:focus {
   outline: none;
+}
+
+.btn:hover {
+  filter: brightness(110%);
 }
 
 .btn:active {
@@ -54,15 +72,24 @@ body {
   width: 100%;
 }
 
+.btn-block:hover {
+  filter: brightness(110%);
+}
+
 .task {
-  background: #f4f4f4;
+  background: #fff;
+  opacity: 0.9;
+  border-radius: 20px;
   margin: 5px;
+  margin-bottom: 15px;
   padding: 10px 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
   cursor: pointer;
 }
 
 .task.reminder {
-  border-left: 5px solid green;
+  border-left: 8px solid #709d67;
 }
 
 .task h3 {
@@ -73,6 +100,7 @@ body {
 
 .add-form {
   margin-bottom: 40px;
+  transition: ease 0.5s;
 }
 
 .form-control {
@@ -81,32 +109,64 @@ body {
 
 .form-control label {
   display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #021d22;
 }
 
 .form-control input {
   width: 100%;
   height: 40px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
   margin: 5px;
-  padding: 3px 7px;
+  padding: 10px 10px;
   font-size: 17px;
+  font-family: inherit;
+}
+
+.form-control input::placeholder {
+  opacity: 0.7;
+}
+
+.form-control input:focus {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-control input:focus::placeholder {
+  color: transparent;
 }
 
 .form-control-check {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* position: relative; */
 }
 
 .form-control-check label {
   flex: 1;
+  position: relative;
 }
 
-.form-control-check input {
+.form-control-check input.checkbox {
   flex: 2;
-  height: 20px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  /* position: absolute; */
+  /* right: 0; */
 }
 
 footer {
   margin-top: 30px;
   text-align: center;
+}
+
+footer p {
+  background: #fff;
+  opacity: 0.7;
+  border-radius: 5px;
+  display: inline;
 }
