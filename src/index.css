@@ -28,6 +28,7 @@ a {
   min-height: 300px;
   border-radius: 10px;
   padding: 30px;
+  transition: ease 0.5s;
 }
 
 .header {
@@ -100,7 +101,6 @@ a {
 
 .add-form {
   margin-bottom: 40px;
-  transition: ease 0.5s;
 }
 
 .form-control {
